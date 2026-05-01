@@ -1,0 +1,374 @@
+
+=== run started 2026-05-01 22:49:29 ===
+input: C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\support_tickets.csv
+output: C:\Users\RahulNew\Downloads\Hacker rank\support_agent\output\output.csv
+[1/29] status=escalated product_area=conversation_management request_type=product_issue
+[2/29] status=escalated product_area=screen request_type=invalid
+[3/29] status=escalated product_area=general_support request_type=product_issue
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[4/29] status=escalated product_area=screen request_type=product_issue
+[5/29] status=escalated product_area=general_help request_type=product_issue
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[6/29] status=escalated product_area=general_help request_type=invalid
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[7/29] status=escalated product_area=general_help request_type=invalid
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[8/29] status=escalated product_area=general_help request_type=invalid
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[9/29] status=escalated product_area=screen request_type=bug
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[10/29] status=escalated product_area=screen request_type=feature_request
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[11/29] status=escalated product_area=screen request_type=invalid
+[12/29] status=escalated product_area=general_help request_type=bug
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[13/29] status=escalated product_area=screen request_type=invalid
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[14/29] status=escalated product_area=settings request_type=invalid
+[15/29] status=escalated product_area=conversation_management request_type=feature_request
+[16/29] status=escalated product_area=general_support request_type=invalid
+[17/29] status=escalated product_area=general_help request_type=bug
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[18/29] status=escalated product_area=screen request_type=invalid
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[19/29] status=escalated product_area=general_support request_type=invalid
+[20/29] status=escalated product_area=conversation_management request_type=invalid
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[21/29] status=escalated product_area=conversation_management request_type=invalid
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[22/29] status=escalated product_area=general_support request_type=product_issue
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[23/29] status=escalated product_area=conversation_management request_type=feature_request
+[24/29] status=replied product_area=general_help request_type=invalid
+[25/29] status=escalated product_area=general_support request_type=invalid
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[26/29] status=escalated product_area=conversation_management request_type=feature_request
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[27/29] status=escalated product_area=general_help request_type=product_issue
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[28/29] status=escalated product_area=conversation_management request_type=invalid
+responder error:
+Traceback (most recent call last):
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\main.py", line 100, in process_row
+    response = generate_response(issue, status)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\responder.py", line 7, in generate_response
+    match = retrieve_similar(issue)
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 101, in retrieve_similar
+    return get_retriever().search(issue, top_k=top_k, company_filter=company)
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\retriever.py", line 91, in get_retriever
+    _default = BM25Retriever(load_corpus())
+                             ~~~~~~~~~~~^^
+  File "C:\Users\RahulNew\Downloads\Hacker rank\support_agent\corpus.py", line 29, in load_corpus
+    raise FileNotFoundError(
+        f"Corpus file not found at {path}. Expected the scraped support docs."
+    )
+FileNotFoundError: Corpus file not found at C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\docs.txt. Expected the scraped support docs.
+[29/29] status=escalated product_area=general_support request_type=product_issue
+wrote 29 rows to C:\Users\RahulNew\Downloads\Hacker rank\support_agent\output\output.csv in 0.0s
+
+=== run started 2026-05-01 22:56:48 ===
+input: C:\Users\RahulNew\Downloads\Hacker rank\support_agent\data\support_tickets.csv
+output: C:\Users\RahulNew\Downloads\Hacker rank\support_agent\output\output.csv
+[1/29] status=escalated product_area=account_management request_type=product_issue
+[2/29] status=escalated product_area=general_help request_type=invalid
+[3/29] status=escalated product_area=general_support request_type=product_issue
+[4/29] status=replied product_area=general_help request_type=product_issue
+[5/29] status=escalated product_area=general_help request_type=product_issue
+[6/29] status=replied product_area=general_help request_type=invalid
+[7/29] status=replied product_area=general_help request_type=invalid
+[8/29] status=replied product_area=general_help request_type=invalid
+[9/29] status=replied product_area=screen request_type=bug
+[10/29] status=replied product_area=interviews request_type=feature_request
+[11/29] status=replied product_area=interviews request_type=invalid
+[12/29] status=escalated product_area=general_help request_type=bug
+[13/29] status=replied product_area=settings request_type=invalid
+[14/29] status=replied product_area=settings request_type=invalid
+[15/29] status=escalated product_area=amazon_bedrock request_type=feature_request
+[16/29] status=escalated product_area=general_support request_type=invalid
+[17/29] status=escalated product_area=general_help request_type=bug
+[18/29] status=replied product_area=general_help request_type=invalid
+[19/29] status=replied product_area=general_support request_type=invalid
+[20/29] status=escalated product_area=safeguards request_type=invalid
+[21/29] status=replied product_area=privacy request_type=invalid
+[22/29] status=replied product_area=travel_support request_type=product_issue
+[23/29] status=replied product_area=privacy request_type=feature_request
+[24/29] status=replied product_area=general_help request_type=invalid
+[25/29] status=escalated product_area=travel_support request_type=invalid
+[26/29] status=replied product_area=amazon_bedrock request_type=feature_request
+[27/29] status=replied product_area=settings request_type=product_issue
+[28/29] status=replied product_area=education request_type=invalid
+[29/29] status=replied product_area=general_support request_type=product_issue
+wrote 29 rows to C:\Users\RahulNew\Downloads\Hacker rank\support_agent\output\output.csv in 0.0s
