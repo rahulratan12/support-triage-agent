@@ -37,7 +37,22 @@ agent falls back to the templates.
 
 Streamlit demo: `streamlit run app.py`
 
-## Evaluation
+## Results on the hackathon data
+
+Run on the hackathon's 29 tickets (`data/support_tickets.csv`): 19 replied, 10 escalated to a human.
+
+On the 10 labeled sample tickets (`data/sample_support_tickets.csv`):
+
+| Metric | Result |
+|---|---|
+| Reply-vs-escalate decision matches label | 9/10 |
+| Request type matches label | 5/10 |
+
+One miss: "Thank you for helping me" was escalated because the vague-message rule
+matches any short message containing the word "help". Request-type accuracy is low
+because classification is keyword-based.
+
+## Evaluation on a self-built test set
 
 Tested on a hand-built set of 30 tickets (10 each for HackerRank, Claude, Visa) in
 `data/test_tickets.csv`, with expected request types and reply/escalate decisions.
